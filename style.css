@@ -1,0 +1,399 @@
+/*nav*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgb(19, 9, 58),rgb(19, 9, 58));
+    width: 90%;
+    padding: 0px 50px;
+    color: #fff;
+    margin: auto;
+}
+nav p{
+    font-weight: 700;
+    font-size: 18px;
+}
+nav p+ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: auto 5px;
+}
+
+nav p+ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+
+/*about*/
+#about{
+    display: block;
+    margin: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+#aboutdiv{
+    display: inline-flex;
+    box-sizing: border-box;
+}
+
+#aboutdiv .aboutfirst{
+    float: left;
+    padding: 20px 30px;
+    width: 300px;
+}
+#aboutdiv .aboutsecond{
+    float: right;
+    padding: 5px 30px;
+    width: 600px;
+    text-align: justify;
+    margin-left: 70px;
+}
+
+#aboutdiv .aboutfirst img{
+    width: 230px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+b{
+    color: rgb(19, 9, 58);
+}
+
+.aboutsecond button{
+    border: none;
+    background-color: rgb(19, 9, 58);
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+#about .titre h6{
+    color: rgb(19, 9, 58);
+    font-size: 15px;
+    margin-left: -20px;
+}
+#about .titre h6::after, #about .titre h6::before{
+    content: "--";
+    margin: 2px;
+    font-size: 20px;
+    color: #000;
+}
+#about .titre h1{
+    font-size: 20px;
+    margin-bottom: -55px;
+    color: #000;
+}
+#about .titre{
+    margin-top: 100px;
+}
+
+/*service*/
+#service{
+    margin: 10px;
+    padding: 40px 15px;
+    background-color: rgb(17, 15, 25);
+    box-shadow: 1px 1px 3px rgb(17,15,25); 
+    text-align: center;
+    display: block;
+}
+#service h1{
+    font-size: 20px;
+    margin-bottom: -40px;
+    color: #fff;
+}
+#service h6{
+    color: rgb(139, 136, 153);
+    font-size: 15px;
+}
+#service h6::after,h6::before{
+    content: "--";
+    font-size: 20px;
+    color: #fff;
+}
+#service #articlediv{
+    display: flex;
+}
+
+/*skills*/
+
+#skills{
+    display: block;
+    margin: 10px;
+    padding: 40px 15px;
+    text-align: center;
+}
+#disposition{
+    display: flex;
+    text-align: justify;
+    box-sizing: border-box;
+    padding: 20px 40px;
+}
+
+#disposition article{
+    margin: 20px;
+}
+
+.first p{
+    width: 600px;
+}
+.first button{
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    background: linear-gradient(to left, rgb(37, 28, 75),rgb(9, 9, 5));
+    padding: 7px 10px;
+   border-radius: 5px;
+}
+.second p{
+    margin-bottom: 15px;
+}
+.second p span{
+    display: block;
+    margin-bottom: 2px;
+}
+
+.bar{
+    position: relative;
+    width: 300px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #f2f4f6;
+    top: -10px;
+}
+.bar .barcontent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(19, 9, 58);
+    height: 100%;
+    border-radius: 5px;
+}
+#skills .titre h6{
+    color: rgb(19, 9, 58);
+    font-size: 15px;
+}
+#skills .titre h6::after, #skills .titre h6::before{
+    content: "--";
+    margin: 2px;
+    font-size: 20px;
+    color: #000;
+}
+#skills .titre h1{
+    font-size: 20px;
+    margin-bottom: -75px;
+    color: #000;
+}
+#skills .titre{
+    margin-bottom: 1px;
+}
+
+.liste{
+    background-color:rgb(17, 15, 14);
+    border-radius: 7px;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    margin: 10px 5px;
+    padding: 15px;
+    text-align: center; 
+    width: 400px;
+}
+svg{
+    fill: rgb(61, 25, 202);
+    width: 30px;
+    height: 30px;
+}
+.liste:hover{
+    background-color:rgb(19, 9, 58);
+    color: #fff;
+}
+.liste:hover svg{
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 1.2px;
+}
+
+/*team*/
+#team .titre{
+    text-align: center;
+}
+#team .titre h1{
+    margin-bottom: 1px;
+}
+
+#team .titre h6{
+    margin-top: 2px;
+}
+
+#team{
+    background-color: rgb(7, 4, 17);
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgb(19, 9, 58);
+}
+
+#team h6{
+    color: rgb(60, 43, 131);
+    font-size: 15px;
+}
+#team h6::after, #team h6::before{
+    content: "--";
+    margin: 2px;
+    font-size: 20px;
+    color: #fff;
+}
+#team h1{
+    font-size: 20px;
+    margin-bottom: -40px;
+    color: #fff;
+}
+
+#section{
+    display: flex;
+    padding: 0 40px;
+}
+
+.card{
+    box-sizing: border-box;
+    border: 1px solid rgb(16, 10, 95);
+    padding: 20px 30px;
+    text-align: center;
+    margin: 7px;
+    box-shadow: 1px 1px 10px rgb(16, 10, 95);
+}
+.card p{
+    position: relative;
+    margin-top: 60px;
+}
+.card div img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    box-shadow: 1px 1px 15px rgb(0, 47, 255);
+}
+
+.card div{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: auto;
+}
+
+
+/*contact*/
+.contact{
+    margin: 10px;
+    padding: 40px 15px;
+    text-align: center;
+    display: block;
+}
+
+.contact .titre{
+    text-align: center;
+}
+.contact .titre h1{
+    margin-bottom: 1px;
+}
+
+.contact .titre h6{
+    margin-top: 2px;
+}
+
+.contact article{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact article .right{
+    margin-right: 0px;
+}
+
+.short{
+    width: 180px;
+    height: 25px;
+    margin-left: 20px;
+}
+input{
+    width: 400px;
+    text-align: center;
+    height: 30px;
+}
+#subject{
+    height: 20px;
+}
+#project{
+    height: 50px;
+    text-align: left;
+}
+
+#submit{
+    width: 110px;
+    margin-right: 305px;
+    color: #fff;
+    background: linear-gradient(to top, rgb(19, 9, 58),rgba(19, 9, 58, 0.75) );
+    border-radius: 5px;
+    border: 1px solid rgb(19, 9, 58);
+}
+.resize{
+    width: 610px;
+    text-align: justify;
+}
+.title,#title{
+    font-weight: bold;
+}
+
+#title{
+    margin-right: 310px;
+}
+
+.contact article div{
+    display: flex;
+}
+.contact article div p {
+    margin: 5px;
+}
+.contact article div p span{
+    display: block;
+}
+
+.contact #envoi{
+    color: #fff;
+    background: linear-gradient(to top,rgba(19, 9, 58, 0.75),rgb(19, 9, 58));
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+}
+
+.contact h6{
+    color: rgb(19, 9, 58);
+    font-size: 15px;
+}
+.contact h6::after, .contact h6::before{
+    content: "--";
+    margin: 2px;
+    font-size: 20px;
+    color: #000;
+}
+.contact h1{
+    font-size: 20px;
+    margin-bottom: -40px;
+    color: #000;
+}
