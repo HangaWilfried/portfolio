@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        section{
+            float: left;
+            display: block;
+            width: 500px;
+            height: 100%;
+            background-color: rgba(22, 230, 143, 0.589);
+            position: fixed;
+            top: 0;
+            left: 0;
+            color: #fff;
+            font-size: 40px;
+            padding: 200px 30px;
+            font-weight: 800;
+            font-family: Arial;
+        }
+        div{
+            position: relative;
+            box-sizing: content-box;
+            padding: 15px;
+            width: 500px;
+            float: right;
+        }
+        div span{
+           margin: 12px 40%;
+        }
+        p{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        p label{
+            margin-right: 20px;
+            color: rgb(0, 255, 234);
+            font-size: 20px;
+            font-weight: bold;
+        }
+        p input{
+            width: 300px;
+            height: 20px;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid rgb(86, 105, 104);
+            color: rgb(0, 255, 234);
+        }
+        p input:hover{
+            border: 1px solid rgb(0, 255, 234);
+            color: rgb(0, 255, 234);
+            border-radius: 5px;
+            height: 40px;
+            transition:  0.2s ease;
+            cursor: pointer;
+            text-align: right;
+        }
+        p input:focus{
+            font-size: 20px;
+            outline: none;
+            border: 1px solid rgb(0, 255, 234);
+            color: rgb(0, 255, 234);
+            border-radius: 5px;
+            cursor: pointer;
+            height: 40px;
+            transition: step-end;
+            text-align: center;
+            box-shadow: 3px 3px 15px rgb(0, 255, 234);
+        }
+        div input[type='submit']{
+            float: right;
+            margin-right: 240px;
+            padding: 7px 20px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 18px;
+            border: none;
+            background-color: rgba(194, 201, 198, 0.589);
+            color: #fff;
+        }
+        .couleur{
+            border-bottom: 1px solid rgb(0, 255, 234);
+        }
+        div input[type='submit']:hover{
+            background-color: rgb(0, 255, 234);
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
+       '' voici le formulaire demand&eacute;. j'ai 
+        volontairement le faire ici. j'esp&egrave;re   
+        que &ccedil;a ne pose pas de probl&egrave;mes ''
+    </section>
+	
+
+    <div>
+        <span>Message me</span>
+       
+        <form action="correct.html" method="GET">
+            <p>
+                <label for="nom">Nom</label>
+                <input type="text" placeholder="enter lastname" class="entree" name="nom" required>
+            </p>
+            <p>
+                <label for="prenom">Prenom</label>
+                <input type="text" placeholder="enter firstname" class="entree" name="prenom" require>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" placeholder="enter email" class="entree" name="email" required>
+            </p>
+            <p>
+                <label for="mot de passe">mot de passe</label>
+                <input type="password" placeholder="enter name" class="entree" name="mot de passe" required>
+            </p>
+            <input type="submit" value="valider">
+        </form>
+    </div>
+<script>
+    var input = document.getElementsByClassName('entree')
+    for(var i=0; i< input.length; i++){
+       input[i].addEventListener('blur',function(e){
+            if(e.target.value.length >= 4){
+                e.target.className = 'couleur';
+            }    
+       })
+    }
+</script>
+</body>
+</html>
